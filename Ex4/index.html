@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drogas</title>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseout="sair()"
+    onmouseenter="entar()">
+        Interaja..
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+
+        function clicar(){
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+        }
+        function sair(){
+            a.innerText = 'saiu!'
+            a.style.background = 'orange'
+        }
+        function entar(){
+            a.innerText = 'entrou!'
+            a.style.background = 'yellow'
+        }
+    </script>
+</body>
+</html>
